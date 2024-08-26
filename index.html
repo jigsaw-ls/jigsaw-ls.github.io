@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio-Virtual</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-overlay"></div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Francisco Saul Gomez Muñoz</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-3">Bienvenido a Mi Portafolio</h1>
+            <p class="lead">Explora mis proyectos personales y trabajos recientes</p>
+            <a href="#projects" class="btn btn-outline-light btn-lg mt-3">Ver Proyectos</a>
+        </div>
+    </header>
+
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Proyectos</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card project-card">
+                        <img src="imagenes/proyectos/juego2D/inicio.png" class="card-img-top" alt="Proyecto 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Proyecto Juego 2D</h5>
+                            <p class="card-text">Proyecto echo en python tipo retro.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project1Modal">Ver Proyecto</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card">
+                        <img src="imagenes/proyectos/facturacion/login.png" class="card-img-top" alt="Proyecto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Proyecto Sis Facturacion</h5>
+                            <p class="card-text">Proyecto echo en python (Django).</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project2Modal">Ver Proyecto</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card">
+                        <img src="imagenes/proyectos/inventario/incio.png" class="card-img-top" alt="Proyecto 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Proyecto Sis Inventario</h5>
+                            <p class="card-text">Proyecto echo en python (Django).</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project3Modal">Ver Proyecto</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card">
+                        <img src="imagenes/proyectos/medico/login.png" class="card-img-top" alt="Proyecto 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Proyecto Sis Medico</h5>
+                            <p class="card-text">Proyecto echo en PHP.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project4Modal">Ver Proyecto</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card">
+                        <img src="imagenes/proyectos/venta/home.png" class="card-img-top" alt="Proyecto 5">
+                        <div class="card-body">
+                            <h5 class="card-title">Proyecto Sis Venta</h5>
+                            <p class="card-text">Proyecto echo en PHP.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project5Modal">Ver Proyecto</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Proyecto 1 -->
+    <div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="project1ModalLabel">Galería Juego 2D</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselProject1" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="imagenes/proyectos/juego2D/inicio.png" class="d-block w-100" alt="Imagen 1 Proyecto 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagenes/proyectos/juego2D/medio.png" class="d-block w-100" alt="Imagen 2 Proyecto 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagenes/proyectos/juego2D/final.png" class="d-block w-100" alt="Imagen 3 Proyecto 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagenes/proyectos/juego2D/inicioc.png" class="d-block w-100" alt="Imagen 4 Proyecto 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagenes/proyectos/juego2D/medioc.png" class="d-block w-100" alt="Imagen 5 Proyecto 1">
+                            </div>
+
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject1" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselProject1" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Proyecto 2 -->
+    <div class="modal fade" id="project2Modal" tabindex="-1" aria-labelledby="project2ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="project2ModalLabel">Galería Sistema de Facturacion</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselProject2" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="imagenes/proyectos/facturacion/login.png" class="d-block w-100" alt="Imagen 1 Proyecto 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagenes/proyectos/facturacion/panel.png" class="d-block w-100" alt="Imagen 2 Proyecto 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagenes/proyectos/facturacion/productos.png" class="d-block w-100" alt="Imagen 3 Proyecto 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagenes/proyectos/facturacion/facturas.png" class="d-block w-100" alt="Imagen 4 Proyecto 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagenes/proyectos/facturacion/clientes.png" class="d-block w-100" alt="Imagen 5 Proyecto 2">
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselProject2" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Proyecto 3 -->
+    <div class="modal fade" id="project3Modal" tabindex="-1" aria-labelledby="project3ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="project3ModalLabel">Galería Sis inventario</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselProject3" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="imagenes/proyectos/inventario/incio.png" class="d-block w-100" alt="Imagen 1 Proyecto 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagenes/proyectos/inventario/videos.png" class="d-block w-100" alt="Imagen 2 Proyecto 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagenes/proyectos/inventario/onjetivo.png" class="d-block w-100" alt="Imagen 3 Proyecto 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagenes/proyectos/inventario/productos.png" class="d-block w-100" alt="Imagen 4 Proyecto 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagenes/proyectos/inventario/historia.png" class="d-block w-100" alt="Imagen 5 Proyecto 3">
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject3" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselProject3" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Proyecto 4 -->
+    <div class="modal fade" id="project4Modal" tabindex="-1" aria-labelledby="project4ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="project4ModalLabel">Galería Sis Medico</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselProject4" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="imagenes/proyectos/medico/login.png" class="d-block w-100" alt="Imagen 1 Proyecto 4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagenes/proyectos/medico/home.png" class="d-block w-100" alt="Imagen 2 Proyecto 4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagenes/proyectos/medico/pacientes.png" class="d-block w-100" alt="Imagen 3 Proyecto 4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagenes/proyectos/medico/especialidades.png" class="d-block w-100" alt="Imagen 4 Proyecto 4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagenes/proyectos/medico/consultorios.png" class="d-block w-100" alt="Imagen 5 Proyecto 4">
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject4" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselProject4" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal Proyecto 5 -->
+    <div class="modal fade" id="project5Modal" tabindex="-1" aria-labelledby="project5ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="project5ModalLabel">Galería Sis Inventario</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselProject5" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="imagenes/proyectos/venta/home.png" class="d-block w-100" alt="Imagen 1 Proyecto 5">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagenes/proyectos/venta/home1.png" class="d-block w-100" alt="Imagen 2 Proyecto 5">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagenes/proyectos/venta/productos.png" class="d-block w-100" alt="Imagen 3 Proyecto 5">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagenes/proyectos/venta/addpr.png" class="d-block w-100" alt="Imagen 4 Proyecto 5">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagenes/proyectos/venta/reporte.png" class="d-block w-100" alt="Imagen 5 Proyecto 5">
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject5" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselProject5" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <section id="about" class="py-5 about-section">
+        <div class="container">
+            <h2 class="text-center mb-5">Acerca de Mí</h2>
+            <p class="text-center about-text">Soy un desarrollador apasionado por la tecnología y la creación de soluciones innovadoras. Tengo experiencia en Python, desarrollo web, bases de datos SQL y seguridad informática. Mi objetivo es seguir aprendiendo y aplicando mis habilidades para crear proyectos impactantes.</p>
+            <div class="text-center">
+                <img src="imagenes/about/FotoMia.png" class="rounded-circle" alt="Foto de Perfil">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Contacto</h2>
+            <form id="contactForm" class="mt-4">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="message" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Mis Proyectos Personales. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
